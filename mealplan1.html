@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fitness Planner</title>
+  <link rel="stylesheet" href="index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+  <style>
+   
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <div>
+      <h1>LOGO</h1>
+    </div>
+    <div class="extras">
+      <div>
+      <a href="Tdee.html">TDEE Calculator</a>
+    </div>
+    <div>
+      <a href="#">Workout Plans</a>
+    </div>
+    <div>
+      <a href="index.html">Diet Plans</a>
+    </div>
+      <div class="login">
+        <a href="#">Login | Signup</a>
+      </div>
+    </div>
+  </div>
+  <div class="body">
+  <div class="hero">
+    <h1>PUT YOUR DIET ON AUTOPILOT</h1>
+    <p class="para">
+      Eatfit creates personalized meal plans based on your required calorie intake. Reach your diet and nutritional goals with our calorie calculator, weekly meal plans, grocery lists, and more. Create your meal plan right here in seconds.
+    </p>
+    <p class="sub">Ready to give it a shot? Let us know your diet</p>
+  </div>
+  <div class="container">
+    <div class="input-group">
+      <label for="calories">I want to eat</label>
+      <input type="number" id="calories" name="calories" value="2500">
+      <span>Calories</span>
+      <a href="#" id="not-sure">Not sure?</a>
+    </div>
+    <button class="button" id="submit">Generate</button>
+  </div>
+  <div id="meal-plan-result"></div>
+</div>
+
+  <!-- Meal Plan Modal -->
+  <div id="mealPlanModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeMealPlanModal">&times;</span>
+      <div id="meal-plan-content"></div>
+    </div>
+  </div>
+
+  <!-- TDEE Calculator Modal -->
+  <div id="tdeeCalculatorModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeTdeeCalculatorModal">&times;</span>
+      <div class="input">
+        <label for="activity-level">Weight:</label>
+        <input type="number" id="weight" placeholder="Weight (kg)">
+        <label for="activity-level">Height:</label>
+        <input type="number" id="height" placeholder="Height (cm)">
+        <label for="activity-level">Activity Level:</label>
+        <select id="activity-level" name="activity-level" required>
+          <option value="sedentary">Sedentary</option>
+          <option value="light">Light</option>
+          <option value="moderate">Moderate</option>
+          <option value="active">Active</option>
+          <option value="very-active">Very Active</option>
+        </select>
+        <label for="activity-level">Age:</label>
+        <input type="number" id="age" placeholder="Age">
+        <label for="activity-level">Gender:</label>
+        <select id="gender" name="gender" required>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <button id="calculateTDEE">Submit</button>
+      <div>
+        <p class="">The Daily Calorie Intake: <span id="res"></span></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
