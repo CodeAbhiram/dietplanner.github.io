@@ -160,12 +160,7 @@ h1 {
   font-size: 24px;
   margin-bottom: 20px;
 }
-.warning{
-  visibility:collapse;
-}
-.x{
-  visibility:collapse;
-}
+
 
 .button {
   display: block;
@@ -255,17 +250,8 @@ button:hover {
   .body{
     background-size:cover;
   }
-  .warning{
-    visibility: visible;
-    margin-top:10px;
-    font-weight: bold;
-  }
-  .x{
-    visibility:visible;
-    margin-top:200px;
-    height: 300px;
-
-  }
+  
+ 
 
   .menu {
     display: none;
