@@ -47,6 +47,9 @@ body {
 .menu {
   display: flex;
 }
+.menu-toggle{
+  display:none;
+}
 
 .menu a {
   text-decoration: none;
