@@ -1,9 +1,17 @@
 /* Base Styles */
 /* Base Styles */
-html{
-  height:-webkit-fill-available;
-}
 body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
   margin: 0;
@@ -13,7 +21,6 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  height:-webkit-fill-available;
 }
 
 .body {
@@ -55,7 +62,6 @@ body {
 }
 .menu-toggle{
   display:none;
-}
 
 .menu a {
   text-decoration: none;
@@ -99,8 +105,8 @@ body {
 }
 
 .container {
-  max-width: 100%;
-  margin: 0 10;
+  max-width: 500px;
+  margin: 0 auto;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 8px;
@@ -160,7 +166,6 @@ h1 {
   font-size: 24px;
   margin-bottom: 20px;
 }
-
 
 .button {
   display: block;
