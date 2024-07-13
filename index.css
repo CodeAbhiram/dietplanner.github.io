@@ -245,14 +245,14 @@ button:hover {
     display: none;
     flex-direction: column;
     width: 100%;
+    max-height: calc(100vh - 50px); 
     background-color: #fff;
-    position: absolute;
+    position: fixed;
     top: 50px;
     left: 0;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
-  }
-  .menu-toggle{
-    display: none;
+    z-index: 1000;
+    overflow-y: auto; 
   }
 
   .menu a {
@@ -269,4 +269,5 @@ button:hover {
     justify-content: space-between;
     align-items: center;
   }
+  
 }
