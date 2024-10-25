@@ -1,7 +1,7 @@
 document.getElementById("submit").addEventListener('click', function(e) {
     e.preventDefault();
     const calories = document.getElementById('calories').value;
-    const apiKey = '0d9ccc49f3f14e5ebb7b94e5c65c39e7';
+    const apiKey = 'xxxxxx';
   
     fetch(`https://api.spoonacular.com/mealplanner/generate?apiKey=${apiKey}&timeFrame=day&targetCalories=${calories||result.result}`)
       .then(response => response.json())
@@ -66,7 +66,7 @@ document.getElementById("submit").addEventListener('click', function(e) {
     const options = {
       method: 'GET',
       headers: {
-        'x-rapidapi-key': '7faefdf719msh7d8d68820c8a714p191f74jsne8ca8bec1540',
+        'x-rapidapi-key': 'xxxxxxxx',
         'x-rapidapi-host': 'gym-fit.p.rapidapi.com'
       }
     };
